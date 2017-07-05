@@ -1,5 +1,5 @@
 {
-  "version": "1.1.2",
+  "version": "1.1.2-net40",
   "buildOptions": {
     "warningsAsErrors": true,
     "keyFile": "../../tools/Key.snk",
@@ -9,28 +9,20 @@
   "packOptions": {
     "repository": {
       "type": "git",
-      "url": "https://github.com/aspnet/configuration"
+      "url": "https://github.com/dotnet40/configuration"
     },
     "tags": [
       "configuration"
     ]
   },
   "dependencies": {
-    "Microsoft.Extensions.Configuration": "1.1.2",
-    "Microsoft.Extensions.FileProviders.Physical": "1.1.1",
-    "NETStandard.Library": "1.6.1"
+    "Microsoft.Extensions.Configuration": "1.1.2-net40",
+    "Microsoft.Extensions.FileProviders.Physical": "1.1.1-net40"
   },
   "frameworks": {
-    "net451": {
-      "frameworkAssemblies": {
-        "System.Collections": {
-          "type": "build"
-        }
-      }
-    },
-    "netstandard1.3": {
+    "net40": {
       "dependencies": {
-        "System.Threading.Thread": "4.3.0"
+        "System.AppContext": "4.3.0-net40"
       }
     }
   }
